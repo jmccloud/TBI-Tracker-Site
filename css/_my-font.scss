@@ -1,0 +1,56 @@
+$headings: #888;
+
+
+h1, h2, h3 {
+}
+
+h1{
+	color: #888;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 45px;
+}
+
+.name  {
+	font-weight: bold;
+	color: black;
+	
+}
+
+
+$blue: #2BA0DA;
+
+a {
+	color: $blue;
+}
+
+
+
+h3 {
+	color: $headings;
+	border-bottom: 1px #888;
+	margin-top: 10px;
+}
+
+h4 {
+	margin-bottom: 1em;
+}
+
+h2 {
+	margin-top: 1em;
+}
+
+.month {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+.year {
+	
+	font-size: 2em;
+	color: #888;
+}
+.ref {
+	font-size: .8em;
+	color: #888;
+}

@@ -2,58 +2,39 @@
 <meta charset=utf-8>
 <html>
   <head> 
-    <title>hReader - Mobile Family Health Manager</title>
+    <title>TBI Tracker</title>
     <!-- Enable IE9 Standards mode -->
     <meta http-equiv="X-UA-Compatible" content="IE=9" >
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
-		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" type="text/css" />
-		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />  
-    <link rel="icon" type="image/png" href="images/hreader_icon2.png"/>
+	<link rel="stylesheet" href="css/master.css" type="text/css" /> 
+
+    <link rel="icon" type="image/png" href="images/TBITRACKER_icon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="wrapper">
-  	<div class="navbar navbar-fixed-top">
+  	<header class="navbar navbar-fixed-top">
   		<div class="navbar-inner">
   			<div class="container">
-  				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</a>
-      		<a class="brand" href="index.html"><img src="images/hreader_logo_small.png" alt="hReader Logo" /></a>
-      		<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li class=""><a href="about.html">About</a></li>
-							<li class=""><a href="screen_shots.html">Screen Shots</a></li>
-							<li class=""><a href="code.html">Code</a></li>
-							<li class=""><a href="documentation.html">Docs</a></li>
-							<li class=""><a href="participate.html">Participate</a></li>
-							<li class=""><a href="news.html">News</a></li>
-							<li class=""><a href="faq.html">FAQ</a></li>
-							<li class=""><a href="contact.html">Contact</a></li>
-						</ul>
-						<ul class="nav pull-right">
-							<li><a class="right" href="http://twitter.com/projecthreader"><img src="images/twitter.png" /></a></li>
-							<li><a class="right" href="http://www.facebook.com/projecthreader"><img src="images/facebook.png" /></a></li>
-						</ul>
-					</div>
-				</div>
+		      	<span class="external-bar"><a href="github.com/TBITracker"><img src="images/octocat.png" alt="GitHub Logo" /></a></span>
+		      	<span class="external-bar"><a href="twitter.com/TBITracker"><img src="images/twitter-bird-light-bgs.png" alt="Twitter Logo" /></a></span>
+	      		<nav class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li class=""><a href="about.html">About</a></li>
+						<li class=""><a href="participate.html">Participate</a></li>
+						<li class=""><a href="news.html">News</a></li>
+						<li class=""><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-		</div>
+		</header>
 		<div class="container content" id="index">
 			<div class="row" id="splash">
-
 				<div class="span4" id="taglines">
-					<span class="logo">
-						<a href="#">
-							<img src="images/hreader_logo.png" alt="hReader" />
-						</a>
-					</span>
-					<h1 class="tag">The mobile health platform for <strong>all</strong> of your data.</h1>
+					<a class="brand" href="index.html"><img src="images/TBI_Tracker_Logo.png" alt="TBI Tracker Logo" /></a>
+					<h1 class="tag">A mobile strategy for Traumatic Brain Injury Rehabilitation</h1>
 					<p class="tagline">
 						 <a href="about.html" class="btn btn-large">Learn more
 						 </a>
@@ -62,10 +43,7 @@
 				<div class="span8" id="slideshow">
 					<!--<img id="shadow" src="images/shadow.png" />-->
 					<div id="slides">
-						<img src="images/hs_summary.png" />
-						<img src="images/hs_conditions.png" />
-						<img src="images/hs_providers.png" />
-						<img src="images/js_timeline.png" />
+						<img src="images/01 Dashboard 2.png" />
 					</div>
 				</div>
 			</div>
@@ -73,76 +51,40 @@
 				<div class="span4" id="spotlight">
 					<h2 class="section">Spotlight</h2>
 					<p>
-						hReader will be released to the open source community 
-						and available for free.  The code for hReader will be posted soon at 
-						<a href="https://github.com/projecthreader">GitHub</a> 
-						under the 
-						<a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a> 
-						license.  
+						TBI Tracker will be released to the open source community and available for free.  The code for TBI Tracker will be posted soon at 
+						<a href="https://github.com/projectTBITracker">GitHub</a>  
 					</p>
 				</div>
 				<div class="span4" id="summary">
-					<h2>What is hReader?</h2>
-					<p>
-						hReader is a patient-centric mobile health data manager that 
-						provides patients and their families with their complete health information securely.  It provides an applet framework to provide hyper-personalized applets to engage patients in their own health status and 
-						how they can improve.  
+					<h2>Abstract</h2>
+					<p>TBI Tracker is research project aims to prove the effectiveness of mobile technology for remote rehabilitation for survivors of a traumatic brain injury.
 					</p>
 				</div>
 				<div class="span4" id="applets">
-					<h2 class="section">Develop Applets</h2>
+					<h2 class="section">Extend Care</h2>
 					<p>
-						hReader includes an open applet framework that allows anyone to extend its
-						functionality, whether it's an interface to a web site, web service, or 
-						wireless sensor.
+						The intention in to extend clincian's rehabilitation as well involve the patient in their treatment
 					</p>
 					<p>
 						<a class="btn" href="applet_dev_guide.html">Learn more</a>
 					</p>
 				</div>
  			</div>
- 			<div class="row" id="footer">
- 				<div class="span4" id="twitter">
- 					<h3><a href="http://www.twitter.com/projecthreader">TWITTER UPDATES</a></h3>
- 					<ul>
- 						<li>
- 							<a href="http://www.twitter.com/projecthreader" class="handle">hreader</a>: 
- 							Just released two new applets!
- 						</li>
- 					</ul>
- 				</div>
- 				<div class="span4" id="menu">
- 					<h3><a href="news.html">LATEST APPLETS</a></h3>
- 					<ul>
- 						<li>Oxygen Saturation</li>
- 						<li>Respiratory Rate</li>
- 					</ul>
- 				</div>
- 				<div class="span4" id="contact">
- 					<h3><a href="contact.html">CONTACT</a></h3>
-					<ul>
-						<li>Join the Announcement List</li>
-					</ul>
- 				</div>
- 			</div>
- 			<div class="row" id="postscript">
- 				<div class="span1" id="host">
- 					<a href="http://github.com/">
- 						<img src="images/github_icon.png" alt="GitHub Logo"/>
- 					</a>
- 				</div>
+ 			<footer class="row" id="footer">
  				<div class="span4">
- 					<p>hReader is funded by <a href="http://www.mitre.org/">the MITRE Corporation</a></p>
+ 					<p>TBI Tracker is funded by 
+ 						<a href="http://www.mitre.org/">
+ 							The MITRE Corporation</a>
+ 					</p>
  				</div>
- 				<div class="span7">
+ 				<div class="span8">
  					<p>
  						*All health data and information in the screen shots is synthetic.
  					</p>
  				</div>
- 			</div>
+ 			</footer>
 		</div>
 	</body>
   <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
-  <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/application.js" type="text/javascript"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </html>

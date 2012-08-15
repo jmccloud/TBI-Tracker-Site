@@ -1,4 +1,8 @@
-body {
+$blue: #2BA0DA;
+
+
+
+/* body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
 }
@@ -20,7 +24,7 @@ h1 {
 h2 {
 	font-weight: bold;
 	text-align: left;
-	color: #D61F29;
+	color: $blue;
 	padding-top: 10px;
 	margin-bottom: 20px;
 	font-size: 1.6em;
@@ -28,11 +32,22 @@ h2 {
 	border-bottom: 1px solid #ccc;
 	text-transform: uppercase;
 }
+h3 {
+	font-weight: 200;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+h4 {
+	font-weight: 100;
+	font-size: 24px;
+	margin-bottom: 5px;
+
+}
 .tagline {
 	align: left;
 }
 a {
-	color: #D61F29;
+	color: $blue;
 }
 
 a:hover {
@@ -48,88 +63,11 @@ h1.logo {
 	width: 100%;
 }
 
-.navbar-inner {
-  background: #EEE;
+#openid a {
+	border: none !important;
 }
+*/
 
-.navbar .navbar-fixed-top{
-	overflow: hidden;
-	width: 100%;
-}
-.navbar .nav > li > a {
-	margin-top: 10px;
-	font-size: 18px;
-	padding: 5px 10px;
-	text-shadow: none;
-	color: #444444;
-}
-
-.navbar .nav > li > a.soon {
-}
-
-.navbar .nav > li > a.right {
-	padding: 0px;
-	margin-top: 3px;
-}
-
-.navbar .nav .active > a, .navbar .nav .active > a:hover {
-  background: white;
-  border-radius: 5px 5px 0 0;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  color: black;
-  font-weight: 800;
-  border-bottom: 3px solid white;
-  margin-bottom: -10px;
-  padding-bottom: 10px;
-}
-
-.navbar .nav > li > a:hover {
-	color: #D61F29;
-}
-
-#slideshow {
-}
- 
-#slides {
-	position:relative; 
-	width:100%; 
-}
-
-#slides img {
-	 position:absolute; left:0; top:0;  
-}
-#shadow {
-	z-index: -1000;
-	position: relative;
-	left: 0px;
-	top: 565px;
-}
-
-#splash {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-myCarousel {
-		overflow: hidden;
-}
-#sections {
-  padding-bottom: 10px;
-}
-
-#spotlight, #applets {
-	border-right: 0px solid gray;
-}
-
-#screen_shots .row {
-	padding-top: 30px;
-}
-
-.caption {
-	padding-top: 10px;
-	text-align: left;
-}
 
 #footer {
   margin-top: 40px;
@@ -142,22 +80,6 @@ myCarousel {
   background: #EEE;
 }
 
-#footer h3 {
-	font-weight: normal;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-#footer ul {
-	list-style-type: none;
-	font-size: 14px;
-}
-
-#footer a {
-}
-
-h2.section {
-}
 
 ul, p, dd {
 	font-size: 16px;
@@ -187,9 +109,8 @@ dt {
 dd { 
 	margin-left: 0;
 }
-#taglines a {
+#taglines .btn {
 	font-size: 18px;
-	float: right;
 }
 
 #taglines h1 {
@@ -219,6 +140,11 @@ em {
 
 a.brand {
 	margin-top: 1px;
+
+	img{
+		width: 50%;
+		height: 50%;
+	}
 }
 
 #postscript {
@@ -289,6 +215,14 @@ h1.tag {
 	font-size: 42px;
 }
 h1.tag strong {
-	color: #D61F29;
+	color: $blue;
 	font-weight: 100;
+}
+
+.MITRE {
+	height: 25px;
+	margin-bottom: 5px;
+}
+#menu {
+	margin-left:0;
 }

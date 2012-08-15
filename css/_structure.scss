@@ -1,0 +1,78 @@
+
+/*structure*/
+
+.background {
+	width: 968px;
+	border: 1px solid #888;
+	border-radius: 10px;
+	box-shadow: inset 1px 2px 4px #888;
+	overflow:scroll;
+	background-color: #fff;
+	
+	ul{
+		padding-left: 0;
+		border-bottom: 1px solid #ccc;
+
+		li {
+			list-style-type: none;
+			padding: 5px;
+
+			span {
+				position: relative;
+				left: 200px;
+			}
+
+			h1 {
+				display: inline-block;
+
+
+			}
+			span {
+				font-size: 1.5em;
+			}
+			
+
+			h2 {
+				color: #999;
+			}
+
+			.label-time {
+
+				span:first-child {
+				}
+			}
+
+			.label-results {
+			
+				span:first-child {	
+				}
+			}
+
+			.result {
+				font-size: 3em;
+			}
+			.measurement {
+				font-size: 1em;
+				color: #999;
+				font-weight: 100;
+			}
+
+			.graph {
+				background-image: url ('images/graph_bp.png');
+			}
+
+		}
+	}
+}
+
+.row { position: relative; }
+.span6, span2, span4, span5 { position: absolute; bottom: 0; 
+margin-top: 20px;}
+
+#splash {
+	margin-bottom: 100px !important;
+}
+
+#sections {
+	margin-top: 50px;
+}
