@@ -3,18 +3,7 @@
 }
 
 @media (max-width: 900px) {
-  nav select  {
-    display: inline-block;
-    background-color: transparent;
-    outline: none;
-    padding: 10px 5px;
-    width: 300px;
-    margin: 15px 0 15px 0;
-    color: $activefont;
-    font-size: 13px;
-    font-size: 1.5em;
-  }
-  .navbar-inner .nav, .navbar-inner nav-tabs  {
+  .nav-tab  {
     display: none;
   }
 }
@@ -104,7 +93,49 @@ and (min-width : 321px) {
 @media only screen
 and (max-width : 480px) {
 /* Styles */
+  header .nav-tabs{
+    display: none;
+    select {
+      display: inline-block;
+    }
+  }
+
+  vignette {
+    max-width: 100%;
+  }
+
+  img#ipad {
+    display: none;
+  }
+  h1 {
+
+  }
+  header {
+    max-width: 100%;
+  }
+    .external-bar {
+      zoom: .5;
+    }
+
+  #sidebar {
+    display: none;
+  }
+    nav select  {
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 5px;
+    width: 300px;
+    margin: 15px 0 15px 0;
+    color: $activefont;
+    font-size: 13px;
+    font-size: 1.5em;
+  }
+  .nav ul {
+    display: none;
+  }
 }
+
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen

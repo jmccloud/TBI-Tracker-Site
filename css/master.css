@@ -4724,18 +4724,7 @@ h1.tag {
   nav select {
     display: none; } }
 @media (max-width: 900px) {
-  nav select {
-    display: inline-block;
-    background-color: transparent;
-    outline: none;
-    padding: 10px 5px;
-    width: 300px;
-    margin: 15px 0 15px 0;
-    color: #58595b;
-    font-size: 13px;
-    font-size: 1.5em; }
-
-  .navbar-inner .nav, .navbar-inner nav-tabs {
+  .nav-tab {
     display: none; } }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -4790,7 +4779,40 @@ h1.tag {
   /* Styles */ }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 480px) {
-  /* Styles */ }
+  /* Styles */
+  header .nav-tabs {
+    display: none; }
+    header .nav-tabs select {
+      display: inline-block; }
+
+  vignette {
+    max-width: 100%; }
+
+  img#ipad {
+    display: none; }
+
+  header {
+    max-width: 100%; }
+
+  .external-bar {
+    zoom: .5; }
+
+  #sidebar {
+    display: none; }
+
+  nav select {
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 5px;
+    width: 300px;
+    margin: 15px 0 15px 0;
+    color: #58595b;
+    font-size: 13px;
+    font-size: 1.5em; }
+
+  .nav ul {
+    display: none; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
