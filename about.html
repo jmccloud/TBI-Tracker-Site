@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+	<head> 
+	  <meta charset=utf-8>
+	  <title>TBI Tracker | About</title>
+	    <!-- Enable IE9 Standards mode -->
+	  <meta http-equiv="X-UA-Compatible" content="IE=9" >
+	    <!--[if lt IE 9]>
+	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+		<link rel="stylesheet" href="css/master.css" type="text/css" />  
+	  <link rel="icon" type="image/png" href="images/TBI_small.png"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	  <script>
+	     // DOM ready
+	     $(function() {
+	       
+	        // Create the dropdown base
+	        $("<select />").appendTo("nav");
+	        
+	        // Create default option "Go to..."
+	        $("<option />", {
+	           "value"   : "",
+	           "text"    : "Go to..."
+	        }).appendTo("nav select");
+	        
+	        // Populate dropdown with menu items
+	        $("nav a").each(function() {
+	         var el = $(this);
+	         var opt = $("<option />", {
+	             "value"   : el.attr("href"),
+	             "text"    : el.text()
+	         });
+	         if ($(this).hasClass("active")) opt.attr("selected","selected");
+	         opt.appendTo("nav select");
+	        });
+	        
+	       // To make dropdown actually work
+	       // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+	        $("nav select").change(function() {
+	          window.location = $(this).find("option:selected").val();
+	        });
+	     });
+	   </script>
+	    <script>
+				$(document).ready(function () {  
+				  var top = $('#sidebar').offset().top - parseFloat($('#sidebar').css('marginTop').replace(/auto/, 0));
+				  
+				  console.log($('#sidebar').css('marginTop'));
+				  
+				  console.log(top);
+				  
+				  $(window).scroll(function (event) {
+				    // what the y position of the scroll is
+			    	var y = $(this).scrollTop();
+			  
+			    // whether that's below the form
+			    	if (y >= top) {
+			      // if so, ad the fixed class
+			     	 $('#sidebar').addClass('fixed');
+			   	 } else {
+			      // otherwise remove it
+			      $('#sidebar').removeClass('fixed');
+			    }
+			  });
+			});
+	    </script>
+  </head>
+	<body class="wrapper">
+	 	<header class="">
+	 		<div class="vignette">
+	 		</div>
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="span4">
+ 						<img id="ipad" src="images/iPad_US_Vertical_sRGB.png">
+ 					</div>
+ 					<div class="span8">
+ 						<div class="row">
+ 							<div class="offset4 span4">
+		 						<span class="external-bar twitt">
+		 							<a href="https://github.com/TBITracker">
+		 								<img src="images/octocat.png" alt="GitHub Logo" /></a>
+		 						</span>
+		 						<span class="external-bar">
+		 							<a href="https://twitter.com/TBITracker">
+		 								<img src="images/twitter-bird-light-bgs.png" alt="Twitter Logo" /></a>
+		 						</span>
+		 					</div>
+ 						</div>
+ 						<div class="row">
+ 							<div class="span8">
+ 								<h1 class="tag">Improving the Transition Home for TRAUMATIC BRAIN INJURY Survivors</h1>
+ 							</div>
+ 						</div>
+ 						<div class="row">
+ 							<div class="span8">
+ 								<nav class="tabbable">
+									<ul class="nav nav-tabs">
+										<li class="">
+											<a href="index.html"><img src="images/home.png" alt="homeIcon" />Home</a></li>
+										<li class="active">
+											<a href="about.html"><img src="images/about.png" alt="homeIcon"/>About</a></li>
+										<li class="">
+											<a href="participate.html"><img src="images/part.png" alt="homeIcon"/>Participate</a></li>
+										<li class="">
+											<a href="news.html"><img src="images/news.png" alt="homeIcon"/>News</a></li>
+										<li class=""><a href="contact.html"><img src="images/contact.png" alt="homeIcon"/>Contact</a></li>
+									</ul>
+								</nav>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>	
+			</div>
+		</header>
+		<div class="container content">
+			<div class="row">
+				<div id="sidebarwrapper" class="">
+					<div class="tabs-left sidenav span4" id="sidebar">
+						<ul class=""> 
+							<li>
+								<a href="#summarya">Summary
+									<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#researchq">Research Questions
+									<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#targetu">Target Users
+									<i class="icon-chevron-right"></i>
+								</a>	
+							</li>
+							<li>
+								<a href="#memory">Prospective Memory
+									<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#assessment">Self-Assessment
+									<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#exercise">Exercises
+									<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+							<li>						
+								<a href="#empowerment">Patient Empowerment
+										<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#timeline">Timeline
+									<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#partners">Partners
+									<i class="icon-chevron-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="offset4 span8 tab-content">
+					<section id="summarya">
+						<h2>Summary</h2>
+						<p>TBI Tracker is an assistive and rehabilitative mobile application for those who have suffered a traumatic brain injury.  The goal of TBI Tracker is to empower survivors to better understand their injury and facilitate their return to everyday life post-injury.  The initial transition home from the hospital is the focus of the research.</p>
+					</section>
+					<section id="researchq">
+						<h2>Research Questions</h2>
+						<p>This is an internally funded research project to better understand the following:
+						</p>
+						<h4>Can outpatient TBI rehabilitation be more effective using mobile technology?</h4>
+						<br>
+						<h4>Can mobile technology empower TBI patients?</h4>
+					</section>
+					<section id="targetu">
+						<h2>Target Users</h2>
+						<p>TBI Tracker is intended for survivors of a traumatic brain injury who have a prospective memory impairement.
+						</p>
+						<p>Have more questions? 
+						</p>
+						<a class="btn" href="contact.html">Contact us</a>
+					<section id="memory">
+						<h2>Prospective Memory</h2>
+
+						<p>The initial design and development efforts will be focused on prospective memory. Prospective memory is the ability to remember to perform a task that takes place in the future, such as remembering to take burgers off a grill or to bring a notebook to a meeting.  </p>
+					</section>
+					<section id="assessment">
+						<h2>Self-Assessment</h2>
+						<p>
+						The initial focus will be an implementation of the PRMQ (Prospective and Retrospective Memory Questionnaire) as well as a prospective memory exercise centered around accomplishing everyday tasks for the iPad.  These will allow the to see how well they are recovering.</p>
+					</section>
+					<section id="exercise">
+						<h2>Exercises</h2>
+						<p>
+						Our particular focus within TBI Tracker is to help patients plan out the steps to everyday tasks they want to do, including what they will need during the process and how long the different steps take so that they know when to start.  Once the activity is planned out, it can be scheduled during a free slot on the person’s schedule.</p>
+					</section>
+					<section id="empowerment">
+						<h2>Patient Empowerment</h2>
+
+						<p>TBI Tracker should allow the patient to have a better understanding of their injury, symptoms, and progress.  By doing so, it promotes patient involvement in the rehabilitation process to have better conversations with their clinicians, care team and family members about their injury.</p>
+					</section>
+					<section id="timeline">
+						<h2>Timeline</h2>
+
+						<p>We are currently in the research and development phase.  As soon as we have a working build, we will make it available to download via <a href="https://github.com/TBITracker">Github</a>.  Please contact us to get a better understanding of what is happening immediately.</p> <a class="btn">Contact us</a>
+					</section>
+			</div>
+		</div>
+	</div>
+		<footer id="footer">
+			<div class="container">
+				<div class="row"> 
+					<div class="span4">
+						<p>TBI Tracker is funded by 
+							<a href="http://www.mitre.org/">
+								The MITRE Corporation</a>
+						</p>
+					</div>
+					<div class="span8">
+						<p>*All health data and information in the screen shots is synthetic.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		  <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+		  <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	</body>
+</html>
