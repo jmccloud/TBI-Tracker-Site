@@ -1,80 +1,133 @@
-$blue: #2BA0DA;
 
-.nav {
-	display: block;
-	margin-top: 20px;
-}
-
-.brand {
-	padding-bottom: 5px !important;
-}
-
-.navbar .navbar-fixed-top{
-	overflow: hidden;
-	width: 100%;
-}
-
-.navbar .nav > li > a {
-	margin-top: 10px;
-	font-size: 18px;
-	padding: 5px 10px;
-	text-shadow: none;
-	color: #888;
-}
-
-a.brand {
-	img {
-		display: block;
+header {
+	.vignette {
+		z-index: -100;
+		position: absolute;
+		top: 138px;
+		width: 100%;
+		height: 180px;
+		background-color: $vignette;
+		width: 100%;
+		background: rgb(43,160,218); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(43,160,218,1) 0%, rgba(43,160,218,.8) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,160,218,.8)), color-stop(100%,rgba(43,160,218,.8))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(43,160,218,.8) 0%,rgba(43,160,218,.8) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(43,160,218,.8) 0%,rgba(43,160,218,.8) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(43,160,218,.8) 0%,rgba(43,160,218,.8) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(43,160,218,.8) 0%,rgba(43,160,218,.8) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ba0da', endColorstr='#2ba0da',GradientType=0 ); /* IE6-9 */
 	}
+	.row:first-child{
+	}
+
 }
+
+
+.ipad {
+}
+ @-webkit-keyframes bounce {
+    from, to  {
+      -webkit-animation-timing-function: ease-out;
+    }
+    50% {
+      top: -5px;
+      -webkit-animation-timing-function: ease-in;
+    }
+  }
 
 .external-bar {
 	float: right;
 	padding-bottom: 0;
 
 	img {
-	height: 50px;
-
+		height: 105px;
+		-webkit-transition: margin 0.8s ease-out;
+	  -moz-transition: margin 0.8s ease-out;
+	  -o-transition: margin 0.8s ease-out;
 	}
+	img:hover {
+		cursor:pointer;
+	  margin-top: -10px;
+	  margin-bottom:10px;
+	}
+}
+.navbar {
+}
+
+nav select {
+	background-color: none;
+	padding: 10px;
+}
+
+h1.tag {
+	margin-top: 30px;
 }
 .navbar-inner {
 	background-color: #fff;
 	background-image: none;
+
+	.nav, nav-tabs {
+		width: 100%;
+	}
 }
-nav {
-	li {
-		color: #Fff;
+
+.navbar .nav > li > a {
+	color: $inactivefont;
+}
+
+.nav li a, .nav li img {
+	vertical-align: baseline;
+}
+.nav li img {
+	padding-right: 5px;
+}
+
+.tabbable {
+	position: relative;
+	margin-top: 125px;
+
+	.nav{
+		ul {
+			margin-left:0;
+			padding-left: 0;
+		}
+
+		a {	
+			color: $inactivefont;
+		}
+
+		.active {
+			a{
+				background-color: $activetab;
+				color: $activefont;
+			}
+			a:hover {
+				background-color: $activehover;
+			}
+		}
 	}
 
-}
-.nav-collapse {
-}
-.navbar .nav > li > a.soon {
-}
-
-.navbar .nav > li > a.right {
-	padding: 0px;
-	margin-top: 3px;
+	.nav > li > a.right {
+		padding: 0px;
+		margin-top: 3px;
 }
 
-.navbar .nav .active > a, .navbar .nav .active > a:hover {
-  background: #E6E7E8;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  color: black;
-  font-weight: 800;
-  padding-bottom: 7px;
-
-}
-
-.navbar .nav > li > a:hover {
+.nav > li > a:hover {
 	color: $blue;
 }
 
-#footer {
-	background-color: #E6E7E8;
-  margin-top: 40px;
-  padding-top: 1em;
-  border-radius: 5px;
+
+
+	.nav-tabs >li {
+		font-size: 1.4em;
+	}
 }
+
+.bs-docs-sidenav .icon-chevron-right {
+	float: right;
+	margin-top: 2px;
+	margin-right: -6px;
+}
+
+
+

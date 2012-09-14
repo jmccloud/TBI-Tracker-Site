@@ -17,10 +17,6 @@
 			list-style-type: none;
 			padding: 5px;
 
-			span {
-				position: relative;
-				left: 200px;
-			}
 
 			h1 {
 				display: inline-block;
@@ -60,14 +56,9 @@
 			.graph {
 				background-image: url ('images/graph_bp.png');
 			}
-
 		}
 	}
 }
-
-.row { position: relative; }
-.span6, span2, span4, span5 { position: absolute; bottom: 0; 
-margin-top: 20px;}
 
 #splash {
 	margin-bottom: 100px !important;
