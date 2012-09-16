@@ -226,7 +226,6 @@ only screen and (min-device-pixel-ratio : 1.5)
 and (orientation : portrait)
 {
 
-
   .wrapper, footer {
     max-width: 640px;
   }
@@ -244,13 +243,6 @@ and (orientation : portrait)
         display: none;
       }
     }
-
-  .vignette {
-    position: absolute;
-    top: 60px;
-    height: 60px;
-  }
-
     nav.tabbable {
       top: 80px;
     }
@@ -273,6 +265,12 @@ and (orientation : portrait)
   }
   h1 {
     display: none;
+  }
+
+  .vignette {
+    position: absolute;
+    top: 80px;
+    height: 60px;
   }
 
    .external-bar {
