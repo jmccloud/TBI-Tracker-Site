@@ -4723,9 +4723,6 @@ h1.tag {
 @media (min-width: 900px) {
   nav select {
     display: none; } }
-@media (max-width: 900px) {
-  .nav-tab {
-    display: none; } }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   html, body {
@@ -4734,85 +4731,68 @@ h1.tag {
   .wrapper, footer {
     max-width: 480px; }
 
-  header .navbar-inner {
-    height: 10px;
-    margin-top: 50px; }
-  header .twit {
-    zoom: .65; }
-  header .ipad img {
-    height: 150px;
-    margin-left: -5px;
-    position: relative;
-    top: 45px; }
   header nav.tabbable {
-    left: 0;
-    position: relative;
-    width: 200px;
+    display: none;
     margin-bottom: 50px;
     margin-top: 40px;
     margin: 0;
     width: 100%; }
-    header nav.tabbable select {
-      margin-top: 50px;
-      color: #58595B;
-      background-color: #fff; }
   header #taglines {
     display: none; }
-    header #taglines h1.tag {
-      font-size: 1em;
-      color: #999; }
 
   .content {
     max-width: 480px;
     margin-top: 100px; }
 
-  .row {
-    max-width: 320px; }
-
-  .offset8 {
-    float: right; }
-
   .offset4 {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  .row {
+    max-width: 320px; } }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */ }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 480px) {
   /* Styles */
-  header .nav-tabs {
+  .wrapper {
+    margin-top: 20px;
+    max-width: 480px; }
+
+  header .span4:first-child {
+    width: 33%; }
+  header .span8 {
+    width: 50%; }
+    header .span8 .offset4 {
+      width: 0%; }
+    header .span8 .span4 {
+      width: 100%; }
+  header h1 {
     display: none; }
-    header .nav-tabs select {
-      display: inline-block; }
+  header .vignette {
+    top: 60px;
+    height: 60px; }
+  header .external-bar {
+    zoom: .5;
+    position: relative;
+    top: 0; }
 
-  vignette {
-    max-width: 100%; }
-
-  img#ipad {
-    display: none; }
-
-  header {
-    max-width: 100%; }
-
-  .external-bar {
-    zoom: .5; }
+  .content {
+    max-width: 100%;
+    margin-top: 0; }
+    .content .span4 {
+      max-width: 100%; }
 
   #sidebar {
     display: none; }
 
-  nav select {
-    display: inline-block;
-    background-color: transparent;
-    outline: none;
-    padding: 10px 5px;
-    width: 300px;
-    margin: 15px 0 15px 0;
-    color: #58595b;
-    font-size: 13px;
-    font-size: 1.5em; }
-
   .nav ul {
-    display: none; } }
+    display: none; }
+
+  #footer .span4 {
+    width: 100%; }
+  #footer .span8 {
+    max-width: 320px; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */

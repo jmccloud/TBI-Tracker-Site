@@ -3,9 +3,6 @@
 }
 
 @media (max-width: 900px) {
-  .nav-tab  {
-    display: none;
-  }
 }
 
 
@@ -28,59 +25,36 @@ and (max-device-width : 480px) {
   .wrapper, footer {
     max-width: 480px;
   }
-  header {
-    .navbar-inner {
-      height: 10px;
-      margin-top: 50px;
-    }
-    .twit {
-      zoom: .65;
-    }
-    .ipad img {
-      height: 150px;
-      margin-left: -5px;
-      position: relative;
-      top: 45px;
 
-    }
+  header .nav-tabs{
+    
+  }
+  header {
     nav.tabbable {
-      left: 0;
-      position: relative;
-      width: 200px;
+      display: none;
       margin-bottom: 50px;
       margin-top: 40px;
       margin: 0;
       width:100%;
-
-      select {
-        margin-top: 50px;
-        color: #58595B;
-        background-color: #fff;
-      }
     }
+
+
     #taglines {
       display: none;
-
-      h1.tag {
-        font-size: 1em;
-        color: #999;
-
-      }
     }
   }
   .content {
     max-width: 480px;
     margin-top: 100px;
   }
-  .row {
-    max-width: 320px;
-  }
-  .offset8 {
-    float: right;
-  }
   .offset4 {
     margin-left: 20px;
   } 
+
+.row {
+    max-width: 320px;
+  }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -93,46 +67,68 @@ and (min-width : 321px) {
 @media only screen
 and (max-width : 480px) {
 /* Styles */
-  header .nav-tabs{
-    display: none;
-    select {
-      display: inline-block;
+.wrapper {
+  margin-top: 20px;
+  max-width: 480px;
+}
+
+
+header {
+
+  .span4:first-child {
+    width: 33%;
+  }
+
+  .span8 {
+    width: 50%;
+
+    .offset4 {
+      width: 0%;
     }
-  }
-
-  vignette {
-    max-width: 100%;
-  }
-
-  img#ipad {
-    display: none;
+      
+    .span4 {
+      width: 100%;
+    }
   }
   h1 {
+    display: none;
+  }
 
+  .vignette {
+    top: 60px;
+    height: 60px;
   }
-  header {
-    max-width: 100%;
-  }
-    .external-bar {
+
+   .external-bar {
       zoom: .5;
+      position: relative;
+      top: 0;
     }
+  }
+
+  .content {
+    max-width: 100%;
+    margin-top: 0;
+
+    .span4 {
+      max-width: 100%;
+      }
+  }
 
   #sidebar {
     display: none;
   }
-    nav select  {
-    display: inline-block;
-    background-color: transparent;
-    outline: none;
-    padding: 10px 5px;
-    width: 300px;
-    margin: 15px 0 15px 0;
-    color: $activefont;
-    font-size: 13px;
-    font-size: 1.5em;
-  }
+
   .nav ul {
     display: none;
+  }
+  #footer {
+    .span4 {
+      width: 100%;
+    }
+    .span8 {
+      max-width: 320px;
+    }
   }
 }
 
