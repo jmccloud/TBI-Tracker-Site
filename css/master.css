@@ -4855,7 +4855,7 @@ h1.tag {
     display: none; }
   header .vignette {
     position: absolute;
-    top: 80px;
+    top: 100px;
     height: 60px; }
   header .external-bar {
     zoom: .5;
