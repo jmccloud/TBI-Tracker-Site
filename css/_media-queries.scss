@@ -224,6 +224,9 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 
+  .wrapper, footer {
+    max-width: 640px;
+  }
 .content {
   max-width: 480px;
 }
