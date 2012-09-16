@@ -4720,8 +4720,11 @@ h1.tag {
     margin-right: 10px;
     font-size: 1.1em; }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   nav select {
+    display: none; }
+
+  nav .nav img {
     display: none; } }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -4731,12 +4734,20 @@ h1.tag {
   .wrapper, footer {
     max-width: 480px; }
 
+  nav select {
+    height: 20px;
+    width: 200px; }
+
   header nav.tabbable {
-    display: none;
-    margin-bottom: 50px;
-    margin-top: 40px;
-    margin: 0;
-    width: 100%; }
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 100%;
+    font-size: .8em;
+    display: inline-block;
+    padding: 0; }
+    header nav.tabbable ul li a {
+      padding: 2px; }
   header #taglines {
     display: none; }
 
@@ -4748,7 +4759,13 @@ h1.tag {
     margin-left: 20px; }
 
   .row {
-    max-width: 320px; } }
+    max-width: 320px; }
+
+  .content {
+    max-width: 100%;
+    margin-top: 50px; }
+    .content .span4 {
+      max-width: 100%; } }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */ }
@@ -4777,16 +4794,7 @@ h1.tag {
     position: relative;
     top: 0; }
 
-  .content {
-    max-width: 100%;
-    margin-top: 0; }
-    .content .span4 {
-      max-width: 100%; }
-
   #sidebar {
-    display: none; }
-
-  .nav ul {
     display: none; }
 
   #footer .span4 {

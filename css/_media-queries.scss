@@ -1,8 +1,16 @@
 @media (min-width: 900px) {
-  nav select  {display: none;}
+  nav select  {}
 }
 
 @media (max-width: 900px) {
+  nav select {
+    display: none;
+  }
+  nav .nav {
+    img {
+      display: none;
+    }
+  }
 }
 
 
@@ -25,17 +33,34 @@ and (max-device-width : 480px) {
   .wrapper, footer {
     max-width: 480px;
   }
+  nav select {
+    height: 20px;
+    width: 200px;
+  }
+  nav {
+
+  }
 
   header .nav-tabs{
     
   }
   header {
     nav.tabbable {
-      display: none;
-      margin-bottom: 50px;
-      margin-top: 40px;
-      margin: 0;
-      width:100%;
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      width: 100%;
+      font-size: .8em;
+      display: inline-block;
+      padding: 0;
+     
+      ul li {
+
+        a {
+          padding: 2px;
+        }
+      }
+
     }
 
 
@@ -55,6 +80,14 @@ and (max-device-width : 480px) {
     max-width: 320px;
   }
 
+  .content {
+    max-width: 100%;
+    margin-top: 50px;
+
+    .span4 {
+      max-width: 100%;
+    }
+  }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -106,21 +139,14 @@ header {
     }
   }
 
-  .content {
-    max-width: 100%;
-    margin-top: 0;
 
-    .span4 {
-      max-width: 100%;
-      }
-  }
 
   #sidebar {
     display: none;
   }
 
   .nav ul {
-    display: none;
+
   }
   #footer {
     .span4 {
