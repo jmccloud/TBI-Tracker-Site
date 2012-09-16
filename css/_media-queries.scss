@@ -223,10 +223,21 @@ and (min-width : 1824px) {
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
+
   #sidebar {
     display: none;
   }
   header {
+    nav .tabbable {
+      img {
+      display: none;
+      }
+    .vignette {
+      top: 100px;
+      height: 60px;
+    }
+
+    }
 
   .span4:first-child {
     width: 33%;
@@ -248,7 +259,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
   }
 
   .vignette {
-    top: 60px;
+    top: 120px;
     height: 60px;
   }
 

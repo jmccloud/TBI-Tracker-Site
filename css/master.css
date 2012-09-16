@@ -4833,6 +4833,11 @@ h1.tag {
   #sidebar {
     display: none; }
 
+  header nav .tabbable img {
+    display: none; }
+  header nav .tabbable .vignette {
+    top: 100px;
+    height: 60px; }
   header .span4:first-child {
     width: 33%; }
   header .span8 {
@@ -4844,7 +4849,7 @@ h1.tag {
   header h1 {
     display: none; }
   header .vignette {
-    top: 60px;
+    top: 120px;
     height: 60px; }
   header .external-bar {
     zoom: .5;
