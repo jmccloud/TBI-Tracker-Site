@@ -4839,7 +4839,8 @@ h1.tag {
   header nav .nav-tabs {
     display: none; }
   header .vignette {
-    top: 40px;
+    position: absolute;
+    top: 60px;
     height: 60px; }
   header nav.tabbable {
     top: 80px; }
