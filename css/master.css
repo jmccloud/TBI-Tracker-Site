@@ -4829,7 +4829,7 @@ h1.tag {
 @media only screen and (min-width: 1824px) {
   /* Styles */ }
 /* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait) {
   .wrapper, footer {
     max-width: 640px; }
 
@@ -4857,9 +4857,6 @@ h1.tag {
       width: 100%; }
   header h1 {
     display: none; }
-  header .vignette {
-    top: 120px;
-    height: 60px; }
   header .external-bar {
     zoom: .5;
     position: relative;
