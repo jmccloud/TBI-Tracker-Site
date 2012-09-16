@@ -4829,3 +4829,24 @@ h1.tag {
 @media only screen and (min-width: 1824px) {
   /* Styles */ }
 /* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  #sidebar {
+    display: none; }
+
+  header .span4:first-child {
+    width: 33%; }
+  header .span8 {
+    width: 50%; }
+    header .span8 .offset4 {
+      width: 0%; }
+    header .span8 .span4 {
+      width: 100%; }
+  header h1 {
+    display: none; }
+  header .vignette {
+    top: 60px;
+    height: 60px; }
+  header .external-bar {
+    zoom: .5;
+    position: relative;
+    top: 0; } }

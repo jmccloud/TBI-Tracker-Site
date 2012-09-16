@@ -222,4 +222,40 @@ and (min-width : 1824px) {
 /* iPhone 4 ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {}
+only screen and (min-device-pixel-ratio : 1.5) {
+  #sidebar {
+    display: none;
+  }
+  header {
+
+  .span4:first-child {
+    width: 33%;
+  }
+
+  .span8 {
+    width: 50%;
+
+    .offset4 {
+      width: 0%;
+    }
+      
+    .span4 {
+      width: 100%;
+    }
+  }
+  h1 {
+    display: none;
+  }
+
+  .vignette {
+    top: 60px;
+    height: 60px;
+  }
+
+   .external-bar {
+      zoom: .5;
+      position: relative;
+      top: 0;
+    }
+  }
+}
