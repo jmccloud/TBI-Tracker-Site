@@ -4835,9 +4835,11 @@ h1.tag {
 
   header nav .tabbable img {
     display: none; }
-  header nav .tabbable .vignette {
-    top: 100px;
+  header .vignette {
+    top: 80px;
     height: 60px; }
+  header nav.tabbable {
+    top: 80px; }
   header .span4:first-child {
     width: 33%; }
   header .span8 {
