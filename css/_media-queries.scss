@@ -225,9 +225,14 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) 
 and (orientation : portrait)
 {
+  html {
+  max-width: 640px;
+  margin: 0;
+  }
 
   .wrapper, footer {
     max-width: 640px;
+
   }
 .content {
   max-width: 480px;
